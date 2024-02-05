@@ -39,9 +39,13 @@ body {
 
 .image-container img {
 	border-radius: 10px;
+	width: 500%;
 }
 
 .image-container:hover {
 	flex: 8;
-    z-index: 1;
+	z-index: 1;
+	background: transparent;
 }
+
+
