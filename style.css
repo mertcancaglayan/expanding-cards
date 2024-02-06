@@ -30,7 +30,7 @@ body {
 	flex: 0.5;
 	color: #fff;
 	cursor: pointer;
-	transition: flex 700ms ease-in;
+	transition: 700ms ease-in;
 	height: 80vh;
 	-webkit-box-shadow: -2px -4px 56px -13px rgba(255, 255, 255, 1);
 	-moz-box-shadow: -2px -4px 56px -13px rgba(255, 255, 255, 1);
@@ -42,10 +42,12 @@ body {
 	width: 500%;
 }
 
-.image-container:hover {
-	flex: 8;
+.expand {
+	flex: 7;
 	z-index: 1;
 	background: transparent;
 }
 
-
+.blur {
+	filter: blur(5px);
+}
