@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Besley:wght@400;500&family=Honk&family=Nabla&family=Noto+Sans+KR:wght@100;300&family=Roboto:wght@300&family=Rokkitt:wght@200&display=swap");
-@import url('https://fonts.cdnfonts.com/css/the-amazing-spider-man');
+@import url("https://fonts.cdnfonts.com/css/the-amazing-spider-man");
 @font-face {
 	font-family: "GOW";
 	src: url("font/GODOFWAR.ttf") format("woff2");
@@ -17,7 +17,6 @@
 	font-family: "witcher";
 	src: url("font/witcher.ttf") format("woff2");
 }
-
 
 * {
 	margin: 0;
@@ -103,7 +102,6 @@ body {
 	filter: blur(5px);
 }
 
-
 #gow {
 	font-family: "GOW";
 }
@@ -121,10 +119,56 @@ body {
 }
 
 #spider-man {
-	font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
+	font-family: "THE AMAZING SPIDER-MAN", sans-serif;
 }
 
 #witcher {
 	font-family: "witcher";
+}
 
+@media screen and (max-width: 768px) {
+	body {
+		overflow: scroll;
+		height: 100%;
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	body {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.container {
+		margin-top: 0;
+		flex-direction: column;
+	}
+
+	.context h3 {
+		font-size: 0.8rem;
+	}
+
+	.context p {
+		font-size: 0.5rem;
+	}
+
+	.image-container {
+		margin: 5px 0;
+		flex: 1;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: auto;
+	}
+
+	.expand {
+		flex: 1;
+	}
+
+	.context {
+		margin-bottom: 10px;
+	}
 }
